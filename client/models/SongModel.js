@@ -3,9 +3,6 @@ var SongModel = Backbone.Model.extend({
 
   initialize: function(){
 
-    this.on('ended',function(){
-      this.dequeue();
-    },this);
   },
 
   play: function(){
