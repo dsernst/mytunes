@@ -23,6 +23,10 @@ var SongQueue = Songs.extend({
       this.dequeue();
     }, this);
 
+    this.on('ended',function(){
+      this.dequeue();
+    },this);
+
   }
 
 });

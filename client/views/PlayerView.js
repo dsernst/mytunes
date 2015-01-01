@@ -7,7 +7,8 @@ var PlayerView = Backbone.View.extend({
 
   initialize: function() {
     this.$el.on('ended',function(e){
-      this.model.dequeue();
+      this.model.ended();
+      console.log("saw ended trigger");
     }.bind(this));
   },
 
